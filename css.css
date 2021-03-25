@@ -1,0 +1,422 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #eeeeee;
+}
+*{
+    box-sizing: border-box;
+}
+/*************************FOR TOP NAV********************/
+.menu a:hover {
+    text-decoration: underline;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    height: 300px;
+    width: 200px;
+    margin-left: 20px;
+}  
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}  
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}  
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}  
+.topnav .icon {
+    display: none;
+}  
+@media screen and (max-width: 300px) {
+.topnav a:not(:first-child) {display: none;}
+.topnav a.icon {
+      float: right;
+      display: block;
+    }   
+  }
+
+  
+  @media screen and (max-width: 300px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+/********************END HERE****************************/
+.main{
+    height: 100vh;
+    background-image: url("Images/3.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+}
+/* .menu a:nth-child(1){
+    color: rgb(7, 7, 7);
+    font-size: 15px;
+    font-family: myriad pro;
+    font-weight: 900;
+}
+.menu a:nth-child(2){
+    color: black;
+    font-size: 15px;
+    margin: 0px 100px;
+    font-family: myriad pro;
+    font-weight: 900;
+} */
+.sign-in{
+    margin: 10px;
+    width: 190px;
+    height: 22px;
+    border-radius: 10px;
+    border: 1px solid #3d3d3e;
+    color: black;
+    background-color: lightgrey;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+.sign-in:hover{
+    
+    color: rgb(0, 0, 0);
+    background-color: #4530c3;
+    transition: all ease 0.5s;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.s-box:hover{
+    position: relative;
+    transform: scale(1.05);
+    transition: transform ease .3s;
+    cursor: pointer;
+    /*transform: rotateY(359deg);*/
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 7px 15px;
+}
+nav ul li  a{
+    text-decoration: none;
+    
+    
+}
+/*---------------code for login page given below ---------------*/
+
+.login-form{
+    height: 280px;
+    width: 290px;
+    padding: 80px;
+    right: 35%;
+    top: 20%;
+    position: absolute;
+}
+
+
+.login-form h1{
+    text-align: center;
+    margin-top: -14%;   
+}
+
+.loginbtn{
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: linear-gradient(120deg, #3498db, #8e44ab);
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    transition: all ease-in-out .5s;
+}
+.loginbtn:active{
+    transform: scale(0.5);
+}
+
+.loginbtn:hover{
+    background-position: right;
+}
+
+.bottomtext{
+    margin-top: 10px;
+    align-items: center;
+    font-size: 14px;
+}
+.bottomtext a{
+    color:#3d3d3e;
+}
+
+.txt{
+    margin: 30px 0;
+    position: relative;
+    border-bottom: 2px solid #adadad;
+}
+
+.txt input{
+    width: 100%;
+    font-size: 15px;
+    border: none;  
+    background: none;
+    outline: none;
+}
+
+.txt span::before{
+    content: attr("data-placeholder");
+    position:relative;
+    z-index: -1;
+    color: #3d3d3e;
+    top: 50%;
+    left: 5px;
+    transition: .5s;
+    transform: translateY(-50%);
+
+}
+
+.txt span::after{
+    top: 100%; 
+    left: 0;
+    width: 100%;
+    height: 2px;
+    content: "";
+    position:relative;
+    transition: .5s;
+    background: linear-gradient(120deg #3498db , #8e44ad);
+}
+
+.focus+span::before{
+    top: -5px;
+}
+/*
+.txt span:hover{
+    width: 100%;
+}
+*/
+
+.focus+span::after{
+    width: 100%;
+}
+/**************************BOX CONTAINER************************/
+.service-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+
+}
+.h-box{
+    align-items: center;
+    margin-top: 20px;
+
+    position: relative;
+
+}
+/* .h-box:hover{
+    text-decoration: underline;
+    box-shadow: 10px 12px 12px rgba(red, red, red, 0.1);
+    background-color: rosybrown;
+} */
+
+.s-box{
+    width: 220px;
+    height: 290px;
+    padding: 20px;
+    background-color:#fff ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 1px 6px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 5px;
+    border-radius: 10px;
+}
+.s-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 10px;
+    background-color:#313131 ;
+}
+.front-icon{
+    background-image:url("Images/front.jpg");
+}
+.back-icon{
+    background-image: url("Images/back.jpg");
+}
+.seo-icon{
+    background-image: url("Images/seo.jpeg");
+}
+.gui-icon{
+    background-image: url("images/gui.jpeg");
+}
+.s-box a{
+    margin: 10px 0px;
+    font-weight: bold;
+    color: #313131;
+    margin: 10px 0px;
+}
+
+.s-box p{
+    font-family: italic;
+    color: #313131;
+    font-size: 14px;
+}
+.s-button{
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius:30px ;
+    color: #4530c3;
+    border: 1px solid #4530c3;
+    background-color:#fff;
+    cursor: pointer;
+    outline: none;
+}
+.s-button:hover{
+    color: #fff;
+    background-color: #4530c3;
+    transition: all ease 0.5s;
+}
+button:active{
+    transform: scale(1.1);
+}
+/************************CIRCULAR THEME CODE HERE********************/
+.circular{
+    position: relative;
+    height: 100px;
+    width: 300px;
+    background: white;
+    padding: 10px;
+    margin: 50px 0px 70px 170px;
+    transform: scale(2);
+    border-radius: 10px;
+}
+@media only screen and (max-width: 600px)   {
+    .circular{
+        flex-direction: column;
+    }
+}
+.circular .inner{
+    position: absolute;
+    display: block;
+    background: gray;
+    height: 80px;
+    width: 80px;
+   /* left: 15%;
+    top: 50%;
+    margin: -40px 0px 0px -40px; */
+    flex-direction: column;
+    border-radius: 100%;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+}
+.circular .bar  {
+    position: absolute;
+    display: flex;
+    height: 50px;
+    width: 50px;
+    align-content: space-between;
+    background: linear-gradient(#1074a5, #8a3ab9);
+    -webkit-border-radius: 100%;
+    
+
+}
+.bar:hover{
+    transform: scale(1.1);
+}
+
+/************************CIRCULAR THEME CODE HERE********************/
+
+
+/************************Footer code Here***********************/
+#footer{
+    background-color:#333;
+    padding: 12px;
+    
+}
+.footer-container{
+    height: 160px;
+    width: 100%;
+    margin: 1px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.fa-heart{
+    color: red;
+}
+
+.follow-icon  a{
+    text-decoration: none;
+    cursor: pointer
+}
+.feedback i{
+cursor: pointer;
+}
+.fa-telegram:hover{
+    transform: scale(1.5);
+    color: #0088cc;
+}
+.fa-facebook-official:hover{
+    transform: scale(1.5);
+    color: white;
+}
+.fa-instagram:hover{
+    transform: scale(1.5);
+    background: linear-gradient(#8a3ab9, #e95950, #bc2a8d, #fccc63, #fbad50,#4c68d7);
+    border-radius: 3px;
+}
+.feedback{
+    color: #fff;
+    max-width: max-content;
+}
+.feedback input{
+    border: none;
+    border-radius: 3%;
+    margin-bottom: 10px;
+    outline: none;
+}
+.feedback-form{
+    margin-right: 10%;
+      
+}
+
+@media only screen and (max-width: 600px) {
+    nav{
+
+    }
+   .service-container{
+       flex-direction: column;
+   }
+   .login-form{
+       flex-direction: column;
+   }
+  }
+
+
+  
